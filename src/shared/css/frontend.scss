@@ -1,0 +1,9 @@
+.wp-site-blocks {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.steves-main-cover {
+    clip-path: url(#cover-path);
+}
