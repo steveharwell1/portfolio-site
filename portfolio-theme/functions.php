@@ -10,7 +10,6 @@ class Steves_Block_Theme {
         add_action('wp_enqueue_scripts', [$this, 'frontend_assets']);
         add_action('init', [$this, 'register_block_pattern_categories']);
         add_action('init', [$this, 'register_block_patterns']);
-        add_action('init', [$this, 'remove_core_block_patterns']);
         add_action('after_setup_theme', [$this, 'add_theme_supports']);
 
     }
@@ -41,10 +40,6 @@ class Steves_Block_Theme {
             }
         }
     }
-
-    function remove_core_block_patterns() {
-    }
-    
 
     function register_block_patterns() {
         $block_patterns =[
